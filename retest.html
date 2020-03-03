@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Retest</title>
+
+    <script>
+
+        // 1
+        let a = +prompt('Enter a number');
+        let b = +prompt('Enter a number');
+        
+        let suma = a;
+        let sumb = b;
+
+        for (let i = a; a > 0; i-- ) {
+            if (a % i == 0 && b % i == 0) {
+                 suma = a / i;
+                 sumb = b / i;
+                break;
+            }
+        }   
+
+        console.log(`${suma} / ${sumb}`);
+
+        // 2
+        let num = 0;
+        function serialNumber() {
+            for (let i = 160; i <= 2048; i = i + 2) {
+                num = num + i;
+            };
+            console.log(num);
+        };
+
+        serialNumber();
+
+        // 3
+        let num2 = 0;
+        function serialNumber2() {
+            for (let i = 163; i <= 815; i = i + 4) {
+                num2 = num2 + i;
+            };
+            console.log(num2);
+        };
+
+        serialNumber2();
+
+        // 5
+        let num3 = 0;
+        function serialNumber3() {
+            for (let i = 1; i <= 18954; i++) {
+                if (i % 2 == 0) {
+                    num3 = num3 - i;
+                } else {
+                    num3 = num3 + i;
+                }
+            };
+            console.log(num3);
+        };
+
+        serialNumber3();
+
+        // 6
+        let num4 = 0;
+        function someOfProduct() {
+            for (let i = 1; i <= 87; i++) {
+                num4 = i * (i + 1) + num4;
+            };
+            console.log(num4);
+        };
+
+        someOfProduct();
+
+        7
+        let num5 = 0;
+        function someOfProduct() {
+            for (let i = 1; i <= 87; i++) {
+                for (let j = 1; j <= i; j++)
+                num5 = i * (i + 1) + num5;
+            };
+            console.log(num5);
+        };
+
+        someOfProduct();
+
+        8
+        let num6 = 0;
+        function someOfProduct() {
+            for (let i = 1; i <= 155; i = i + 2) {
+                for (let j = 1; j <= i; j = j + 2)
+                num6 = i * (i + 1) + num6;
+            };
+            console.log(num6);
+        };
+
+        someOfProduct();
+
+        // 9
+        let num7 = 0;
+        function someOfProduct() {
+            for (let i = 1; i <= 155; i = i + 2) {
+                for (let j = 1; j <= i; j = j + 2)
+                num7 = i * (i + 1) + num7;
+            };
+            console.log(num7);
+        };
+
+        someOfProduct();
+
+        // 10
+        let min = Infinity;
+        let input = Infinity;
+
+        while (input) {
+            input = +prompt('Enter a number');
+            if (input < min) {
+                min = input
+
+            }
+        }
+
+        console.log(min);
+
+        // 11 
+        let min1 = Infinity;
+        let min2 = Infinity;
+        let min3 = Infinity;
+        let input = Infinity;
+
+        while (input) {
+            input = +prompt('Enter a number');
+            if (input < min1) {
+                min3 = min2;
+                min2 = min1;
+                min1 = input;
+            } else if (input < min2) {
+                min3 = min2;
+                min2 = input;
+            } else if (input < min3) {
+                min3 = input;
+            }
+            console.log(`min1: ${min1}, min2: ${min2}, min: ${min3}`);
+        }
+        console.log(min1, min2, min3);
+
+        // 12
+        let min = Infinity;
+        let max = - Infinity;
+        let input = Infinity;
+
+        while (input) {
+            input = +prompt('Enter a number');
+            if (input < min) {
+                min = input;
+            } else if (input > max) {
+                max = input;
+            }
+            console.log(`min: ${min}, max: ${max}`);
+        }
+
+        console.log(min, max);
+
+        // 13
+        let min = Infinity;
+        let max = - Infinity;
+        let input = Infinity;
+
+        while (input) {
+            input = +prompt('Enter a number');
+            if (input < min) {
+                min = input;
+            } else if (input > max) {
+                max = input;
+            }
+            console.log(`min: ${min}, max: ${max}`);
+        }
+
+        input = max - min;
+        console.log(input);
+
+        // 14
+        let arr = [];
+        let input = Infinity;
+        let sum = 0;
+
+        while (input) {
+            input = +prompt('Enter a number');
+            if (Number.isInteger(input) === true) {
+                arr.push(input);
+            } 
+        }
+
+        for (i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+        sum = sum / arr.length;
+        console.log(sum);
+
+        // 15
+        let input = prompt('Enter a number');
+        input = input.split("").reverse().join("");
+
+        console.log(input);
+
+        if (input.includes("-")) {
+            input = input.replace('-', '');
+            console.log(input);
+            input = input * -1;
+        }
+
+        console.log(input);
+
+    </script>
+</head>
+
+<body>
+    <h1>Retest</h1>
+</body>
+
+</html>
